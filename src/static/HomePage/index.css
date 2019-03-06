@@ -1,0 +1,182 @@
+.home-header {
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background:rgba(255,255,255,1);
+}
+.header-logo {
+    float: left;
+    margin-left: 5%;
+    margin-top: 15px;
+    width: 240px;
+}
+.user-logo {
+    float: right;
+    margin-right: 5%;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.login_btn {
+    float: right;
+    margin-right: 5%;
+    margin-top: 14px;
+    width: 80px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    background:linear-gradient(180deg,rgba(87,255,178,1) 0%,rgba(1,201,85,1) 100%);
+    border-radius:30px;
+}
+.Screen_list {
+    margin: 0 auto;
+    width: 90%;
+    height: 45px;
+    line-height: 45px;
+}
+.icon_circlu {
+    margin-top: -4px;
+    margin-left: 2px;
+    width: 11px;
+    height: 8px;
+}
+.Screen_ways {
+    margin-left: 10px;
+}
+.Home_Content {
+    width: 100%;
+    height: auto;
+    background:rgba(244,245,249,1);
+    overflow: hidden;
+}
+.CourseLi {
+    margin: 10px auto;
+    width: 90%;
+    height: 140px;
+    background: #fff;
+    border-radius: 4px;
+}
+.CourseTop {
+    margin: 0 auto;
+    width: 94%;
+    height: 100px;
+    border-bottom:1px solid rgba(244,245,249,1);
+    display: flex;
+}
+.CourseBottom {
+    margin: 0 auto;
+    width: 94%;
+    height: 40px;
+}
+.CourseTopLeft {
+    flex: 2;
+}
+.CourseTopRight {
+    flex:3;
+}
+.CourseImg {
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+}
+.CourseInfo:nth-child(1){
+    margin-top: 5px;
+}
+.CourseInfo {
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 1em;
+    font-size: 15px;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.NowPrice  {
+    font-size: 17px;
+    color: #FF4E4E;
+}
+.OldPrice {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+}
+.timelimit {
+    float: right;
+    margin-top: 5px;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    background: url(./../../img/timeBG.png) no-repeat center center;
+    background-size: 100% 100%;
+    font-size: 10px;
+    color:#1CDA72;
+}
+.icon_date {
+    margin-top: -4px;
+    margin-right: 4px;
+    width: 15px;
+    height: 15px;
+}
+.icon_hour {
+    margin-right: 4px;
+    width: 12px;
+    height: 16px;
+}
+.BottomTime {
+    font-size: 12px;
+    color:#333;
+    line-height: 40px;
+}
+.BottomInfo {
+    font-size: 12px;
+    color: #999;
+}
+.ListMore {
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+    color:rgba(153,153,153,1);
+}
+.icon_book {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 20px;
+    height: 16px;
+    display: block;
+}
+.BottomLogo {
+    margin: 0 auto;
+    width: 240px;
+    height: 35px;
+    display: block;
+}
+.HomeBottom {
+    background:rgba(244,245,249,1);
+}
+.HomePropaganda {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+    font-size:12px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:16px;
+}
+.BottomName {
+    margin: 0px;
+    margin-top: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    color:rgba(153,153,153,1);
+}
