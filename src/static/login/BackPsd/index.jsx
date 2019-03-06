@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import SuccessTip from './../SuccessTip';
 class BackPsd extends Component {
     constructor(props) {
         super(props);
@@ -8,7 +8,8 @@ class BackPsd extends Component {
             SecondTip:'hidden',
             SecondTipColor:'#333',
             getCode : true,
-            time : 60
+            time : 60,
+            Tipalert:false
         };
     }
     // 获取验证码倒计时
@@ -32,8 +33,19 @@ class BackPsd extends Component {
             }
         },100)
     }
+    MakeSureRegister = ()=>{
+        this.setState({
+            Tipalert : true
+        },()=>{
+            setTimeout(()=>{
+                this.setState({
+                    Tipalert : false
+                });
+            },3000);
+        });
+    }
     render() {
-        let {SecondTipColor,SecondTip,getCode,time}=this.state;
+        let {SecondTipColor,SecondTip,getCode,time,Tipalert}=this.state;
         return (
             <div>
                 <div className='tip'>验证码:</div>
@@ -52,9 +64,12 @@ class BackPsd extends Component {
                 <div className="phoneNum" style={{borderColor:SecondTipColor, marginBottom: 16 }}>
                     <input type="text" placeholder="请再次输入密码" className="input_phone" maxLength={11}/>
                 </div>
-                <div className="rightIn">
+                <div className="rightIn" onClick={()=>this.MakeSureRegister()}>
                     确定
                 </div>
+                {
+                    Tipalert&&<div className="tipalert"><SuccessTip /></div>
+                }
             </div>
         );
     }

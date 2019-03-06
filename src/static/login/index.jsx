@@ -12,13 +12,13 @@ class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            title:'手机验证码登录',
+            title:'注册账号',
             num:'',
             FirstTip:'hidden',
             FirstTipColor:'#333',
-            code:true,
+            code:false,
             password:false,
-            register:false,
+            register:true,
             backpsd:false,
             policy:false,
             registagreement:false
