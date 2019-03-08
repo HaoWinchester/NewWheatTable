@@ -1,0 +1,179 @@
+.MyOrderHeader {
+     width: 100%;
+     height: 100px;
+     background: url(./../../img/MyOrderHeaderBg.png) no-repeat center;
+     background-size: 100% 100%;
+}
+.MyOrderHeaderImg {
+    float: left;
+    margin-left: 30px;
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.UserNum {
+    margin-left: 20px;
+    font-size: 17px;
+    color: #fff;
+    line-height: 60px;
+}
+.exit_account {
+    float: right;
+    margin-right: 30px;
+    margin-top: 32px;
+    padding: 6px 12px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+.icon_text {
+    margin-top: -6px;
+    width: 16px;
+    height: 16px;
+}
+.MyStatus {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    background-color: #fff;
+}
+.MyStatus span {
+    float: left;
+    margin-left: 4%;
+    width: 20%;
+    height: 38px;
+    font-size: 14px;
+    line-height: 38px;
+    display: block;
+    text-align: center;
+}
+.MyStatusActive {
+    border-bottom: 1px solid #1CDA72;
+    color:#1CDA72;
+}
+.OrderList {
+    width: 100%;
+    height: auto;
+    background: rgba(244,245,249,1);
+    overflow: hidden;
+}
+.PayYet {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 210px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.PayYet_title {
+    margin: 0px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border:1px solid rgba(244,245,249,1);
+}
+.Pay_status {
+    margin-left: 10px;
+    color: #FF4D4D;
+}
+.Pay_tip {
+    margin-left: 10px;
+    font-size:11px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:30px;
+}
+
+.NowPay{
+    margin-top:5px;
+    margin-right: 4%;
+    float: right;
+    display: block;
+    padding: 6px 10px;
+    width: 80px;
+    border-radius: 50px;
+    height: 30px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background: #FF4D4D;
+}
+.Orderspace {
+    width: 100%;
+    padding: 0 4%;
+    border-bottom: 1px solid rgba(244,245,249,1);
+}
+.CancelOrder {
+    margin-top:5px;
+    margin-right: 4%;
+    float: right;
+    display: block;
+    padding: 6px 10px;
+    border-radius: 50px;
+    width: 80px;
+    height: 30px;
+    line-height: 14px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    background: #fff;
+    border: 1px solid #999;
+}
+.PayCancel {
+    margin-left: 10px;
+    color: #999;
+}
+.PayAlready {
+    margin-left: 10px;
+    color: #1CDA72;
+}
+.NowListen,
+.PayAgain {
+    margin-top: 5px;
+    margin-right: 4%;
+    float: right;
+    display: block;
+    width:80px;
+    padding: 6px 10px;
+    border-radius: 50px;
+    height: 30px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background: #1CDA72;
+}
+.PayAgain {
+    background: #1CDA72;
+}
+.OrderList_tip {
+    height: 100px;
+    line-height: 100px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+.MyOrderBottom {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+}
+.BackBuyLesson {
+    margin: 0 auto;
+    margin-top: 3px;
+    width: 90%;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+
+    background:linear-gradient(180deg,rgba(87,255,178,1) 0%,rgba(1,201,85,1) 100%);
+}

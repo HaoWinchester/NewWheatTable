@@ -13,7 +13,7 @@
 .user-logo {
     float: right;
     margin-right: 5%;
-    margin-top: 5px;
+    margin-top: 6px;
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -32,10 +32,10 @@
     border-radius:30px;
 }
 .Screen_list {
-    margin: 0 auto;
-    width: 90%;
+    width: 100%;
     height: 45px;
     line-height: 45px;
+    background-color: #fff;
 }
 .icon_circlu {
     margin-top: -4px;
@@ -179,4 +179,123 @@
     font-size: 14px;
     line-height: 30px;
     color:rgba(153,153,153,1);
+}
+.EditAccount {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    border-top: 1px solid rgba(51,51,51,0.5);
+}
+.ExitAccountTip {
+    width: 100%;
+    height: 175px;
+    background-color: #fff;
+}
+.exit-logo {
+    float: left;
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.icon_cha {
+    margin: 70px auto;
+    display: block;
+}
+.UserNum {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100px;
+    font-size: 15px;
+    color: #333;
+    line-height: 40px;
+    display: block;
+}
+.ExitBtn {
+    float: right;
+    margin-top: 26px;
+    margin-right: 5%;
+    padding: 5px 10px;
+    border:1px solid rgba(153,153,153,1);
+    border-radius: 50px;
+}
+.MyOrderList{
+    margin:0 auto;
+    margin-top: 40px;
+    width:200px;
+    height:30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background:linear-gradient(180deg,rgba(87,255,178,1) 0%,rgba(1,201,85,1) 100%);
+    border-radius:30px;
+}
+.GradeList {
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    height: auto;
+    max-height: 330px;
+    background:rgba(244,245,249,1);
+}
+.SelectGradeTitle {
+    margin: 0px;
+    margin-left: 5%;
+    width:183px;
+    height:42px;
+    font-size:15px;
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:42px;
+}
+
+.grade {
+    float: left;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    margin-left: 4%;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    border:1px solid #fff;
+}
+.grades {
+    float: left;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    margin-left: 4%;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    color: #1CDA72;
+    border:1px solid #1CDA72;
+}
+.grade-list{
+    margin: 0px;
+    height: 240px;
+    overflow: auto;
+}
+.GradeMakeSure{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;font-size: 15px;
+    background-color: #1CDA72;
+}
+#GrColor {
+    color: #1CDA72;
 }

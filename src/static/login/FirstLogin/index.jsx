@@ -9,34 +9,39 @@ class FirstLogin extends Component {
         super(props);
         this.state = {
             policy : false,
-            registagreement : false
+            registagreement : false,
+            bottomImg:true
         };
     }
     OpenPolicy = ()=>{
         this.setState({
-            policy : true
+            policy : true,
+            bottomImg:false
         });
     }
     OpenRegistAgree = ()=>{
         this.setState({
-            registagreement : true
+            registagreement : true,
+            bottomImg:false
         });
     }
     ClosePolicy = ()=>{
         this.setState({
-            policy : false
+            policy : false,
+            bottomImg : true
         });
     }
     CloseRegistAgree = ()=>{
         this.setState({
-            registagreement : false
+            registagreement : false,
+            bottomImg : true
         });
     }
     RightRegister = ()=>{
         window.location.href="./Login"
     }
     render() {
-        let {registagreement,policy} = this.state;
+        let {registagreement,policy,bottomImg} = this.state;
         return (
             <div>
                 <img src={register} alt='' className="Defaultimg"/>
@@ -48,7 +53,7 @@ class FirstLogin extends Component {
                 </p>
                 {policy&&<Policy ClosePolicy={()=>this.ClosePolicy()}/>}
                 {registagreement&&<RegistAgreement CloseRegistAgree={()=>this.CloseRegistAgree()}/>}
-                <Logo />
+                {bottomImg&&<Logo />}
             </div>
         );
     }

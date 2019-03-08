@@ -4,7 +4,7 @@ class HomeHeader extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            OrLogin : false
+            OrLogin : true
         };
     }
     render() {
@@ -13,7 +13,11 @@ class HomeHeader extends Component {
             <div className="home-header">
                 <img src={logo} alt='' className="header-logo"/>
                 {
-                    OrLogin?<img src='http://pic.58pic.com/58pic/15/68/59/71X58PICNjx_1024.jpg' alt="" className="user-logo"/>:
+                    OrLogin?<img src='http://img3.imgtn.bdimg.com/it/u=1986179278,1118313821&fm=26&gp=0.jpg'
+                            alt=""
+                            className="user-logo"
+                            onClick={()=>this.props.OpenExit()}
+                            />:
                     <span className="login_btn">登录</span>
                 }
             </div>
