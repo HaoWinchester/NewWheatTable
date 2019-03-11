@@ -36,11 +36,12 @@ const orderList = [
 class MyOrderListContent extends Component {
 
     render() {
+        // eslint-disable-next-line
         const Content = orderList.map((data,index)=>{
             // eslint-disable-next-line
             if(data.type==1){
                 return(
-                    <div className="PayYet">
+                    <div className="PayYet" key={index}>
                         <p className='PayYet_title'>
                             <span className="Pay_status">待支付</span>
                             <span className="Pay_tip">(请在15分钟内完成支付)</span>
@@ -71,7 +72,8 @@ class MyOrderListContent extends Component {
                         </div>
                         <div>
                             <span className="NowPay">立即支付</span>
-                            <span className="CancelOrder">取消订单</span>
+
+                            <span className="CancelOrder" onClick={()=>this.props.CancelOrders()}>取消订单</span>
                         </div>
                     </div>
 
@@ -79,7 +81,7 @@ class MyOrderListContent extends Component {
                 // eslint-disable-next-line
             }else if(data.type==2){
                 return(
-                    <div className="PayYet">
+                    <div className="PayYet"  key={index}>
                         <p className='PayYet_title'>
                             <span className="PayAlready">已支付</span>
                         </p>
@@ -114,7 +116,7 @@ class MyOrderListContent extends Component {
                 // eslint-disable-next-line
             }else if(data.type==3){
                 return(
-                    <div className="PayYet">
+                    <div className="PayYet"  key={index}>
                         <p className='PayYet_title'>
                             <span className="PayCancel">已取消</span>
                         </p>
@@ -142,7 +144,7 @@ class MyOrderListContent extends Component {
                             </div>
                         </div>
                         <div>
-                            <span className="PayAgain">重新下单</span>
+                            <span className="PayAgain" onClick={()=>this.props.PayAgain()}>重新下单</span>
                         </div>
                     </div>
                 )

@@ -36,7 +36,7 @@
 }
 .MyStatus {
     width: 100%;
-    height: 44px;
+    height: 38px;
     line-height: 44px;
     background-color: #fff;
 }
@@ -161,12 +161,13 @@
 }
 .MyOrderBottom {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: #fff;
+    overflow: hidden;
 }
 .BackBuyLesson {
     margin: 0 auto;
-    margin-top: 3px;
+    margin-top: 7px;
     width: 90%;
     height: 44px;
     line-height: 44px;
@@ -174,6 +175,73 @@
     text-align: center;
     color: #fff;
     font-size: 16px;
-
     background:linear-gradient(180deg,rgba(87,255,178,1) 0%,rgba(1,201,85,1) 100%);
+}
+.CancelOrderBg {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(51,51,51,0.5);
+}
+.CancelOrderTip{
+    margin: 140px auto;
+    width: 80%;
+    height: 160px;
+    background: #fff;
+    border-radius: 6px;
+}
+.Cancel_fork {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 15px;
+}
+.CancelBtn{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+}
+.CancelBtn div {
+    flex: 1;
+}
+.CanBtn ,.SureBtn {
+    margin: 0 auto;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    border-radius: 50px;
+}
+.CancelTip {
+    line-height: 60px;
+    text-align: center;
+    clear:both;
+}
+.CanBtn {
+    color:#999;
+    border:1px solid #999;
+}
+.SureBtn {
+    color:#fff;
+    background:linear-gradient(180deg,rgba(87,255,178,1) 0%,rgba(1,201,85,1) 100%);
+}
+.LookMoreCourse {
+    margin: 0 auto;
+    width:200px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background:linear-gradient(180deg,rgba(87,255,178,1) 0%,rgba(1,201,85,1) 100%);
+    border-radius:30px;
+}
+.NoneOrder {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: 125px;
+    display: block;
 }

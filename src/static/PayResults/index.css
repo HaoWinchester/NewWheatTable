@@ -1,0 +1,56 @@
+.PaySuccess {
+    margin: 10px auto;
+    width: 94%;
+    height: auto;
+    background: #fff;
+    overflow: hidden;
+}
+.icon_successs {
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+.PayNormal {
+    margin: 0px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    color:#333;
+}
+.PaySuccessTxt {
+    margin: 0px;
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.ErCode{
+    margin: 10px auto;
+    width: 140px;
+    height: 140px;
+    display: block;
+}
+.LookOrder {
+    margin: 20px auto;
+    width: 90%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #1CDA72;
+    color: #1CDA72;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50px;
+}
+.CourseDetails .DetailTxt {
+    margin: 5px auto;
+}
+.icon_fail {
+    margin: 10px auto;
+    margin-top: 60px;
+    width: 60px;
+    height: 60px;
+    display: block;
+}
