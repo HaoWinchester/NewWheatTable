@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import  './index.css';
 import icon_close from './../../img/icon_close.png';
+import Password from './Password';
 import Logo from './../logo';
-import Register from './Register';
-import Policy from './Policy';
-import RegistAgreement from './RegistAgreement';
-class Login extends Component {
+class PsdLogin extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,8 +12,8 @@ class Login extends Component {
             FirstTip:'hidden',
             FirstTipColor:'#333',
             code:false,
-            password:false,
-            register:true,
+            password:true,
+            register:false,
             backpsd:false,
             policy:false,
             registagreement:false
@@ -46,59 +44,20 @@ class Login extends Component {
             });
         }
     }
-    ChangePassword =()=>{
-        window.location.href="./PsdLogin"
-    }
     ChangeCode = ()=>{
-        this.setState({
-            code:true,
-            password:false,
-            register:false,
-            title:'手机验证码登录'
-        });
-    }
-    ChangeRegister = ()=>{
-        this.setState({
-            code:false,
-            password:false,
-            register:true,
-            title:'注册账号'
-        });
+        window.location.href='./CodeLogin'
     }
     ChangeToBackPsd = ()=>{
-        this.setState({
-            code:false,
-            password:false,
-            register:false,
-            backpsd:true,
-            title:'找回密码'
-        });
+        window.location.href='./GetBackPsd'
     }
-    OpenPolicy = ()=>{
-        this.setState({
-            policy : true
-        });
-    }
-    OpenRegistAgree = ()=>{
-        this.setState({
-            registagreement : true
-        });
-    }
-    ClosePolicy = ()=>{
-        this.setState({
-            policy : false
-        });
-    }
-    CloseRegistAgree = ()=>{
-        this.setState({
-            registagreement : false
-        });
+    rightLogin = ()=>{
+        
     }
     render() {
-        let {num,FirstTip,FirstTipColor,registagreement,policy} = this.state;
+        let {num,FirstTip,FirstTipColor,password} = this.state;
         return (
             <div className="wrap">
-                <h2 className="login_title">注册账号</h2>
+                <h2 className="login_title">账号密码登录</h2>
                 <div style={{ marginBottom: 16 }}>
                     <div className='tip'>验证码:</div>
                     <div className="phoneNum" style={{borderColor:FirstTipColor}}>
@@ -116,19 +75,18 @@ class Login extends Component {
                     <p className="warn_tip" style={{visibility: FirstTip }}>手机号码格式错误!</p>
                 </div>
                 <div style={{ marginBottom: 16 }}>
-                        <Register onChangePassword={()=>this.ChangePassword()}
-                              rightLogin={()=>this.rightLogin()}
-                              OpenPolicy={()=>this.OpenPolicy()}
-                              OpenRegistAgree={()=>this.OpenRegistAgree()}
+                    {
+                        password&&<Password onChangCode={()=>this.ChangeCode()}
+                                  ChangeToBackPsd={()=>this.ChangeToBackPsd()}
+                                  rightLogin={()=>this.rightLogin()}
                         />
+                    }
                 </div>
                 <Logo />
-                {policy&&<Policy ClosePolicy={()=>this.ClosePolicy()}/>}
-                {registagreement&&<RegistAgreement CloseRegistAgree={()=>this.CloseRegistAgree()}/>}
             </div>
         );
     }
 
 }
 
-export default Login;
+export default PsdLogin;
